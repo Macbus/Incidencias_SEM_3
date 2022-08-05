@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/copia_emergencies_mediques"
+        tools:context=".ui.signin.LoginFragment">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/main_Vguide10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/main_Vguide90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/main_Hguide90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.9" />
+        <LinearLayout
+            android:id="@+id/llbuttons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/main_Hguide90"
+            app:layout_constraintEnd_toStartOf="@+id/main_Vguide90"
+            app:layout_constraintStart_toEndOf="@+id/main_Vguide10">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/register_btn_cancelar"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:padding="3dp"
+                android:text="@string/register_cancel"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/primary_lightColor"
+                app:cornerRadius="15dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/register_btn_registro"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="@string/register_register"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:padding="3dp"
+                app:backgroundTint="@color/primary_lightColor"
+                app:cornerRadius="15dp"
+                app:strokeColor="@color/white"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_til_password2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="@string/register_password_repeat"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/color_primary"
+            app:boxStrokeWidth="2dp"
+            app:cornerRadius="15dp"
+            app:endIconMode="password_toggle"
+            app:hintTextColor="@color/color_secondary"
+            app:layout_constraintBottom_toTopOf="@id/llbuttons"
+            app:layout_constraintEnd_toStartOf="@id/main_Vguide90"
+            app:layout_constraintStart_toEndOf="@id/main_Vguide10">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:nextFocusDown="@id/register_btn_registro"
+                android:id="@+id/register_tie_password2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_til_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="@string/register_password"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/color_primary"
+            app:boxStrokeWidth="2dp"
+            app:cornerRadius="15dp"
+            app:endIconMode="password_toggle"
+            app:hintTextColor="@color/color_secondary"
+            app:layout_constraintBottom_toTopOf="@id/register_til_password2"
+            app:layout_constraintEnd_toStartOf="@id/main_Vguide90"
+            app:layout_constraintStart_toEndOf="@id/main_Vguide10">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:nextFocusDown="@id/register_tie_password2"
+                android:id="@+id/register_tie_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_til_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="@string/register_e_mail"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/color_primary"
+            app:boxStrokeWidth="2dp"
+            app:cornerRadius="15dp"
+            app:endIconMode="custom"
+            app:hintTextColor="@color/color_secondary"
+            app:layout_constraintBottom_toTopOf="@id/register_til_password"
+            app:layout_constraintEnd_toStartOf="@id/main_Vguide90"
+            app:layout_constraintStart_toEndOf="@id/main_Vguide10">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:nextFocusDown="@id/register_tie_password"
+                android:id="@+id/register_tie_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_til_surname"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="@string/register_Surname"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/color_primary"
+            app:boxStrokeWidth="2dp"
+            app:cornerRadius="15dp"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/color_secondary"
+            app:layout_constraintBottom_toTopOf="@id/register_til_email"
+            app:layout_constraintEnd_toStartOf="@id/main_Vguide90"
+            app:layout_constraintStart_toEndOf="@id/main_Vguide10">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:nextFocusDown="@id/register_tie_email"
+                android:id="@+id/register_tie_surname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_til_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="@string/register_Name"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/color_primary"
+            app:boxStrokeWidth="2dp"
+            app:cornerRadius="15dp"
+            app:endIconMode="clear_text"
+            app:hintTextColor="@color/color_secondary"
+            app:layout_constraintBottom_toTopOf="@id/register_til_surname"
+            app:layout_constraintEnd_toStartOf="@id/main_Vguide90"
+            app:layout_constraintStart_toEndOf="@id/main_Vguide10">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:nextFocusDown="@id/register_tie_surname"
+                android:id="@+id/register_Tie_Name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/main_profile_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@mipmap/ic_expocom_blue_2_round"
+            app:layout_constraintBottom_toTopOf="@id/register_til_name"
+            app:layout_constraintEnd_toStartOf="@id/main_Vguide90"
+            app:layout_constraintStart_toEndOf="@id/main_Vguide10"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

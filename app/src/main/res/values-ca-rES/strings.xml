@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gestor d\'Incidencies</string>
+    <string name="forgot_pass">¿Has oblidat la contrasenya?</string>
+    <string name="main_registro">¡Registra\'t!</string>
+    <string name="main_pass">Contrasenya</string>
+    <string name="main_username">Nom d\' usuari</string>
+    <string name="main_login">¡Iniciar sessió!</string>
+    <string name="error_blank_pasword">¡La contrasenya no pot estar büida!</string>
+    <string name="error_blank_username">¡L\'usuari no pot estar büit!</string>
+    <string name="register_Name">Introdueix Nom</string>
+    <string name="register_Surname">Introdueix Cognom</string>
+    <string name="register_e_mail">Introdueix E-Mail</string>
+    <string name="register_password">Introdueix la contrasenya</string>
+    <string name="register_password_repeat">Repeteix contrasenya</string>
+    <string name="register_register">Registrar</string>
+    <string name="register_cancel">Cancelar</string>
+    <string name="error_blank_name">¡Tens que introduïr el seu nom!</string>
+    <string name="error_blank_surname">¡Tens que introduir els seus cognoms!</string>
+    <string name="call_sign">Indicatiu</string>
+     <!-- Navigation_Drawer-->
+    <string name="title_activity_navigation_drawer">Navigation_Drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">User</string>
+    <string name="nav_header_subtitle">otro@expocomsa.es</string>
+    <string name="action_settings">Editar</string>
+    <string name="close_session">Tancar Sessió</string>
+    <string name="nav_header_desc">Imatge</string>
+    <!--Fragment Create-->
+    <string name="fragment_create">Crear</string>
+    <string name="fragment_create_incidence">Incidència</string>
+    <string name="fragment_create_ISSI">ISSI</string>
+    <string name="fragment_create_callSign">Indicatiu</string>
+    <string name="fragment_create_location">Centre</string>
+    <string name="fragment_create_dev_break">Equip</string>
+    <string name="fragment_create_breakdown">Averia</string>
+    <string name="fragment_create_condition">Estat</string>
+    <string name="fragment_crete_date">Data</string>
+    <string name="fragment_crete_TEI">TEI</string>
+    <string name="fragment_create_incidence_tie">Introdueix Nº d\'Incidència</string>
+    <string name="menu_Query">Consultes</string>
+    <string name="menu_Update">Actualitzar</string>
+    <string name="menu_Create">Nova Incidencia</string>
+    <string name="fragment_create_Tip">Generar nº incidència proporcionat per Cellnex</string>
+    <string name="menu_inicio">Gestor d\'Incidencies</string>
+    <string name="fragment_search">Trobar</string>
+    <string name="fragment_query">Consultar</string>
+    <string name="nav_login" type="id">login</string>
+    <string name="fragment_update">Actualitzar</string>
+    <string name="fragment_update_condition">Estat</string>
+    <string name="navV_menu_Inicio">Inici</string>
+
+
+</resources>

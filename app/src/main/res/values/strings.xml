@@ -1,0 +1,58 @@
+<resources>
+    <!--  activity_main-->
+    <string name="app_name">Gestor Incidencias</string>
+    <string name="forgot_pass">¿Has olvidado la contraseña?</string>
+    <string name="main_registro">¡Registrate!</string>
+    <string name="main_pass">Contraseña</string>
+    <string name="main_username">Nombre de usuario</string>
+    <string name="main_login">¡Iniciar sesión!</string>
+    <string name="error_blank_pasword">¡La contraseña no puedes estar vacia!</string>
+    <string name="error_blank_username">¡El usuario no puede estar vacio!</string>
+    <!--  activity_register-->
+    <string name="register_Name">Introduzca Nombre</string>
+    <string name="register_Surname">Introduzca Apellidos</string>
+    <string name="register_e_mail">Introduzca E-Mail</string>
+    <string name="register_password">Introduzca la contraseña</string>
+    <string name="register_password_repeat">Repita Contraseña</string>
+    <string name="register_register">Registrar</string>
+    <string name="register_cancel">Cancelar</string>
+    <string name="error_blank_name">¡Tiene que introducir su Nombre!</string>
+    <string name="error_blank_surname">¡Tiene que introducir sus Apellidos !</string>
+    <string name="call_sign">Indicativo</string>
+    <string name="title_activity_navigation_drawer">Navigation_Drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">User</string>
+    <string name="nav_header_subtitle">user@expocomsa.es</string>
+    <string name="nav_header_desc">Imagen</string>
+    <string name="action_settings">Editar</string>
+    <string name="close_session">Cerrar Sesión</string>
+    <!--Navigation Drawer-->
+    <string name="menu_inicio">Gestor de Incidencias</string>
+    <string name="menu_Create">Nueva Incidencia</string>
+    <string name="menu_Query">Consultas</string>
+    <string name="menu_Update">Actualizar</string>
+   <!--Fragment Create-->
+    <string name="fragment_create">Crear</string>
+    <string name="fragment_create_incidence">Incidencia</string>
+    <string name="fragment_create_ISSI">ISSI</string>
+    <string name="fragment_create_callSign">Indicativo</string>
+    <string name="fragment_create_location">Centro</string>
+    <string name="fragment_create_dev_break">Equipo</string>
+    <string name="fragment_create_breakdown">Averia</string>
+    <string name="fragment_create_condition">Estado</string>
+    <string name="fragment_crete_date">Fecha</string>
+    <string name="fragment_crete_TEI">TEI</string>
+    <string name="fragment_create_incidence_tie">Introduzca Nº Incidencia</string>
+    <string name="fragment_create_Tip">Generar nº de incidencia proporcionado por Cellnex</string>
+    <string name="navV_menu_Inicio">Inicio</string>
+    <!--Fragment Query-->
+    <string name="fragment_query">Consultar</string>
+        <!--Fragment Update-->
+    <string name="fragment_update">Actualizar</string>
+    <string name="fragment_search">Buscar</string>
+    <string name="fragment_update_condition">Estado</string>
+    <string name="nav_login">Login</string>
+
+
+</resources>

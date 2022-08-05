@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/expocom_2"
+    tools:context=".ui.update.UpdateFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_Vguide10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_Vguide90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_Hguide90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <LinearLayout
+        android:id="@+id/llupdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/main_Vguide90"
+        app:layout_constraintStart_toEndOf="@+id/main_Vguide10"
+        app:layout_constraintTop_toBottomOf="@id/main_Hguide90">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fragment_update_btn_actualizar"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="@string/fragment_update"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/primary_lightColor"
+            app:cornerRadius="15dp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/fragment_sp_condition"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="152dp"
+        android:background="@color/white"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/llupdate"
+        app:layout_constraintEnd_toStartOf="@id/main_Vguide90"
+        app:layout_constraintStart_toEndOf="@id/main_Vguide10" />
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/fragmente_update_tv_condition"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        android:text="Estado actual a actualizar:"
+        android:textColor="@color/black"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/fragment_sp_condition"
+        app:layout_constraintEnd_toStartOf="@id/main_Vguide90"
+        app:layout_constraintStart_toEndOf="@id/main_Vguide10"
+        tools:ignore="MissingConstraints" />
+
+
+    <Spinner
+        android:id="@+id/fragment_sp_incidence"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="152dp"
+        android:background="@color/white"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_sp_condition"
+        app:layout_constraintEnd_toStartOf="@id/main_Vguide90"
+        app:layout_constraintStart_toEndOf="@id/main_Vguide10" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/fragmente_update_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:padding="10dp"
+        android:text="Actualizar por Nº incidencia:"
+        android:textColor="@color/black"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/fragment_sp_incidence"
+        app:layout_constraintEnd_toStartOf="@id/main_Vguide90"
+        app:layout_constraintStart_toEndOf="@id/main_Vguide10"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
